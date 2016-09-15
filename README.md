@@ -1,5 +1,5 @@
 # Project
-Music Application using Django
+Music Application(v 0.1) using Django
 
 Requirements:
 
