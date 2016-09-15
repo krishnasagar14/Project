@@ -31,14 +31,13 @@ body {
 .genre_list {
     list-style-type : none;
     position : absolute;
-    align-text : left;
-    vertical-align : center;
+    text-align : left;
+    vertical-align : middle;
     width : 340px;
     height : 370px;
     overflow-y : scroll;
 }
 .genre_list::-webkit-scrollbar {
-    widthv : 0px;
     background : transparent;
 }
 #genres {
@@ -58,7 +57,7 @@ body {
     font-size : x-large;
     padding-top : 10px;
     padding-bottom : 10px;
-    vertical-align : center;
+    vertical-align : middle;
 }
 
 #msgDiv {

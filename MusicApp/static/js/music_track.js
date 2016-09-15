@@ -17,7 +17,7 @@ $.fn.stars = function() {
         var noStar = new Array(Math.floor(numStars + 1 - rating)).join('<i class="fa fa-star-o"></i>');
         $(this).html(fullStar + halfStar + noStar);
     });
-}
+};
 $('.stars').stars();
 
 var popup;
@@ -45,8 +45,7 @@ $('#page3').click(function() {
 });
 
 $( document ).ready(function() {
-    $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list');
-    $("#msgDiv").fadeOut(3000);
+    $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list').fadeOut(3000);
 });
 
 function f1(ele) {
@@ -58,23 +57,20 @@ function f1(ele) {
 function f2(nextPage) {
     $("#Ptab").click(function() {
         if (nextPage == undefined) {
-            $("#msgDiv").fadeIn(300).text('Reached first page, no previous !!!');
-            $("#msgDiv").fadeOut(3000);
+            $("#msgDiv").fadeIn(300).text('Reached first page, no previous !!!').fadeOut(3000);
         }
         else {
             if ((nextPage[0]-2)>0) {
                 window.location.href = 'http://' + location.host + '/tracks/' + (nextPage[0]-2) + '/';
             }
             else {
-                $("#msgDiv").fadeIn(300).text('Reached first page !!!');
-                $("#msgDiv").fadeOut(3000);
+                $("#msgDiv").fadeIn(300).text('Reached first page !!!').fadeOut(3000);
             }
         }
     });
     $("#Ntab").click(function() {
         if (nextPage == undefined) {
-            $("#msgDiv").fadeIn(300).text('On first page, use below tabs !!!');
-            $("#msgDiv").fadeOut(3000);
+            $("#msgDiv").fadeIn(300).text('On first page, use below tabs !!!').fadeOut(3000);
         }
         else {
             window.location.href = 'http://' + location.host + '/tracks/' + nextPage[0] + '/';

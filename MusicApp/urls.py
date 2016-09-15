@@ -1,6 +1,6 @@
 __author__ = 'krishnasagar'
 
-from django.conf.urls import url, include
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [

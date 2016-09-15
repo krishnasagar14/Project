@@ -35,8 +35,7 @@
         f1(0);
     {% endif %}
     $( document ).ready(function() {
-        $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list');
-        $("#msgDiv").fadeOut(3600);
+        $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list').fadeOut(3600);
         setTimeout(function(){
             {% if start %}
                 f2(0);

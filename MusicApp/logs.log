@@ -1,0 +1,376 @@
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 13:45:33
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Not Found: /resources
+[15/Sep/2016 13:45:36] "GET /resources? HTTP/1.1" 404 3328
+[15/Sep/2016 13:46:16] "GET /? HTTP/1.1" 200 15221
+[15/Sep/2016 13:47:33] "GET /? HTTP/1.1" 200 15221
+[15/Sep/2016 13:55:42] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 13:55:43] "GET /static/js/music_track.js HTTP/1.1" 200 3074
+[15/Sep/2016 13:55:43] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 200 86351
+[15/Sep/2016 13:55:43] "GET /static/css/font-awesome.min.css HTTP/1.1" 200 29063
+[15/Sep/2016 13:55:43] "GET /static/img/icon.png HTTP/1.1" 200 19099
+[15/Sep/2016 13:55:43] "GET /static/css/music_track.css HTTP/1.1" 200 2079
+[15/Sep/2016 13:55:43] "GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[15/Sep/2016 13:55:52] "GET /tracks/4/ HTTP/1.1" 200 14489
+[15/Sep/2016 13:55:55] "GET /tracks/3/ HTTP/1.1" 200 16451
+[15/Sep/2016 13:55:55] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 14:03:42] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:03:42] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 14:03:42] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:03:46] "GET /genres HTTP/1.1" 301 0
+[15/Sep/2016 14:03:47] "GET /genres/ HTTP/1.1" 200 3461
+[15/Sep/2016 14:03:47] "GET /static/css/genre.css HTTP/1.1" 200 1240
+[15/Sep/2016 14:03:47] "GET /static/js/genre.js HTTP/1.1" 200 1588
+[15/Sep/2016 14:03:50] "GET /addGenre/ HTTP/1.1" 200 1234
+[15/Sep/2016 14:03:51] "GET /static/css/form2.css HTTP/1.1" 200 688
+[15/Sep/2016 14:03:51] "GET /static/js/form2.js HTTP/1.1" 200 764
+[15/Sep/2016 14:05:20] "GET /genres/ HTTP/1.1" 200 3461
+[15/Sep/2016 14:05:20] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:05:20] "GET /static/css/genre.css HTTP/1.1" 200 1240
+[15/Sep/2016 14:05:20] "GET /static/js/genre.js HTTP/1.1" 304 0
+[15/Sep/2016 14:05:23] "GET /genres/ HTTP/1.1" 200 3461
+[15/Sep/2016 14:09:04] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:09:04] "GET /static/css/music_track.css HTTP/1.1" 200 2078
+[15/Sep/2016 14:09:04] "GET /static/js/music_track.js HTTP/1.1" 200 3074
+[15/Sep/2016 14:09:04] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 200 86351
+[15/Sep/2016 14:09:04] "GET /static/css/font-awesome.min.css HTTP/1.1" 200 29063
+[15/Sep/2016 14:09:04] "GET /static/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 71896
+[15/Sep/2016 14:09:09] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:09:09] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:09:09] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:09:09] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 14:09:09] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:09:52] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:09:52] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:09:52] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:09:52] "GET /static/css/music_track.css HTTP/1.1" 200 2079
+[15/Sep/2016 14:09:52] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:05] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:10:05] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:05] "GET /static/css/music_track.css HTTP/1.1" 200 2079
+[15/Sep/2016 14:10:05] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:10:05] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:12] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:10:12] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:10:12] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:12] "GET /static/css/music_track.css HTTP/1.1" 200 2078
+[15/Sep/2016 14:10:12] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:25] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:10:25] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:10:25] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:25] "GET /static/css/music_track.css HTTP/1.1" 200 2082
+[15/Sep/2016 14:10:25] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:59] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:10:59] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:10:59] "GET /static/css/music_track.css HTTP/1.1" 200 2061
+[15/Sep/2016 14:10:59] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:10:59] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:11:56] "GET /genres HTTP/1.1" 301 0
+[15/Sep/2016 14:11:56] "GET /genres/ HTTP/1.1" 200 3461
+[15/Sep/2016 14:11:56] "GET /static/js/genre.js HTTP/1.1" 200 1588
+[15/Sep/2016 14:11:56] "GET /static/css/genre.css HTTP/1.1" 200 1222
+[15/Sep/2016 14:19:46] "GET /genres/ HTTP/1.1" 200 3461
+[15/Sep/2016 14:19:46] "GET /static/css/genre.css HTTP/1.1" 304 0
+[15/Sep/2016 14:20:19] "GET /genres/1/ HTTP/1.1" 200 3468
+[15/Sep/2016 14:20:22] "GET /genres/0/ HTTP/1.1" 200 3461
+Not Found: /favicon.ico
+[15/Sep/2016 14:37:28] "GET /favicon.ico HTTP/1.1" 404 3334
+[15/Sep/2016 14:37:55] "GET /genres/0/ HTTP/1.1" 200 3439
+[15/Sep/2016 14:37:55] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:37:55] "GET /static/css/genre.css HTTP/1.1" 200 1222
+[15/Sep/2016 14:37:55] "GET /static/js/genre.js HTTP/1.1" 200 1548
+[15/Sep/2016 14:38:21] "GET /genres/0/ HTTP/1.1" 200 3439
+[15/Sep/2016 14:38:21] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:38:21] "GET /static/js/genre.js HTTP/1.1" 304 0
+[15/Sep/2016 14:38:21] "GET /static/css/genre.css HTTP/1.1" 200 1222
+[15/Sep/2016 14:38:34] "GET /genres/ HTTP/1.1" 200 3439
+[15/Sep/2016 14:38:34] "GET /static/css/genre.css HTTP/1.1" 304 0
+[15/Sep/2016 14:40:12] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:40:12] "GET /static/css/music_track.css HTTP/1.1" 200 2065
+[15/Sep/2016 14:40:12] "GET /static/js/music_track.js HTTP/1.1" 200 2974
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:42:57
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:44:10
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:45:36
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:46:10
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:47:08
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:48:00
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:48:56
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:49:40
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:49:53
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:49:59
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Unhandled exception in thread started by <function wrapper at 0xb67a1f0c>
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:50:20
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:50:53
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:52:40
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Sep/2016 14:52:53] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 14:52:53] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 14:52:53] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 14:52:53] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 14:52:53] "GET /static/css/music_track.css HTTP/1.1" 200 2061
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:53:40
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 14:56:07
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:00:41
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:02:29
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:03:09
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Sep/2016 15:18:14] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 15:18:14] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:18:14] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:18:14] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:18:14] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:18:18] "GET /editTrack/27/ HTTP/1.1" 200 2602
+[15/Sep/2016 15:18:18] "GET /static/js/form1.js HTTP/1.1" 200 1452
+[15/Sep/2016 15:18:18] "GET /static/css/form1.css HTTP/1.1" 200 762
+[15/Sep/2016 15:18:21] "GET /editTrack/27/ HTTP/1.1" 200 2602
+[15/Sep/2016 15:18:29] "POST /editTrack/27/ HTTP/1.1" 200 427
+[15/Sep/2016 15:19:00] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 15:19:00] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:19:00] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:00] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:00] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:19:06] "GET / HTTP/1.1" 200 15221
+[15/Sep/2016 15:19:06] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:19:06] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:06] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:06] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:19:18] "GET / HTTP/1.1" 200 14880
+[15/Sep/2016 15:19:18] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:19:18] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:18] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:19:18] "GET /static/js/music_track.js HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:22:01
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Sep/2016 15:22:12] "GET / HTTP/1.1" 200 14880
+[15/Sep/2016 15:22:12] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:22:12] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:22:12] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:22:12] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:22:15] "GET /editTrack/27/ HTTP/1.1" 200 2498
+Internal Server Error: /editTrack/27/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 235, in get_response
+    response = middleware_method(request, response)
+  File "/usr/local/lib/python2.7/dist-packages/django/middleware/common.py", line 114, in process_response
+    if response.status_code == 404:
+AttributeError: 'str' object has no attribute 'status_code'
+[15/Sep/2016 15:22:25] "POST /editTrack/27/ HTTP/1.1" 500 15488
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:23:12
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:23:42
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Sep/2016 15:23:48] "GET / HTTP/1.1" 200 14992
+[15/Sep/2016 15:23:48] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:23:48] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:23:48] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:23:48] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:23:50] "GET /static/js/form1.js HTTP/1.1" 200 1384
+Internal Server Error: /editTrack/27/
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py", line 235, in get_response
+    response = middleware_method(request, response)
+  File "/usr/local/lib/python2.7/dist-packages/django/middleware/common.py", line 114, in process_response
+    if response.status_code == 404:
+AttributeError: 'str' object has no attribute 'status_code'
+[15/Sep/2016 15:24:00] "POST /editTrack/27/ HTTP/1.1" 500 15490
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 15, 2016 - 15:24:48
+Django version 1.9.7, using settings 'Project.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+[15/Sep/2016 15:24:55] "GET / HTTP/1.1" 200 14992
+[15/Sep/2016 15:24:55] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:24:55] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:24:55] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:24:55] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:24:56] "GET /static/js/form1.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:03] "POST /editTrack/27/ HTTP/1.1" 200 423
+[15/Sep/2016 15:25:08] "GET / HTTP/1.1" 200 14992
+[15/Sep/2016 15:25:08] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:08] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:08] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:08] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:51] "GET /editTrack/27/ HTTP/1.1" 200 2494
+[15/Sep/2016 15:25:51] "GET /static/js/form1.js HTTP/1.1" 200 1391
+[15/Sep/2016 15:25:53] "GET / HTTP/1.1" 200 14992
+[15/Sep/2016 15:25:53] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:53] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:53] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:53] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:56] "GET / HTTP/1.1" 200 14876
+[15/Sep/2016 15:25:56] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:56] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:56] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:25:56] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:25:57] "GET /static/js/form1.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:01] "POST /editTrack/27/ HTTP/1.1" 200 426
+[15/Sep/2016 15:26:45] "GET / HTTP/1.1" 200 14876
+[15/Sep/2016 15:26:45] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:45] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:45] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:45] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:47] "GET / HTTP/1.1" 200 14876
+[15/Sep/2016 15:26:47] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:47] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:47] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:47] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:49] "GET / HTTP/1.1" 200 14876
+[15/Sep/2016 15:26:49] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:49] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:49] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:49] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:51] "GET / HTTP/1.1" 200 14876
+[15/Sep/2016 15:26:51] "GET /static/css/music_track.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:51] "GET /static/css/font-awesome.min.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:51] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:51] "GET /static/js/music_track.js HTTP/1.1" 304 0
+[15/Sep/2016 15:26:53] "GET /editTrack/28/ HTTP/1.1" 200 2568
+[15/Sep/2016 15:26:53] "GET /static/css/form1.css HTTP/1.1" 304 0
+[15/Sep/2016 15:26:53] "GET /static/js/form1.js HTTP/1.1" 200 1387
+[15/Sep/2016 15:26:57] "POST /editTrack/28/ HTTP/1.1" 200 428
+[15/Sep/2016 15:27:07] "GET /genres HTTP/1.1" 301 0
+[15/Sep/2016 15:27:07] "GET /genres/ HTTP/1.1" 200 3439
+[15/Sep/2016 15:27:08] "GET /static/css/genre.css HTTP/1.1" 304 0
+[15/Sep/2016 15:27:08] "GET /static/js/genre.js HTTP/1.1" 304 0
+[15/Sep/2016 15:27:10] "GET /addTrack/ HTTP/1.1" 200 2425
+[15/Sep/2016 15:27:10] "GET /static/js/form1.js HTTP/1.1" 304 0
+[15/Sep/2016 15:27:31] "POST /addTrack/ HTTP/1.1" 200 484
+[15/Sep/2016 15:28:06] "GET /editGenre/6/ HTTP/1.1" 200 1254
+[15/Sep/2016 15:28:06] "GET /static/css/form2.css HTTP/1.1" 200 688
+[15/Sep/2016 15:28:06] "GET /static/js/form2.js HTTP/1.1" 200 709
+Yes
+[15/Sep/2016 15:28:10] "POST /editGenre/6/ HTTP/1.1" 200 1255
+[15/Sep/2016 15:28:13] "GET /genres/ HTTP/1.1" 200 3440
+[15/Sep/2016 15:28:13] "GET /static/css/genre.css HTTP/1.1" 304 0
+[15/Sep/2016 15:28:13] "GET /static/js/jquery-3.1.0.min.js HTTP/1.1" 304 0
+[15/Sep/2016 15:28:13] "GET /static/js/genre.js HTTP/1.1" 304 0
+[15/Sep/2016 15:28:15] "GET /addGenre/ HTTP/1.1" 200 1234
+[15/Sep/2016 15:28:15] "GET /static/js/form2.js HTTP/1.1" 304 0

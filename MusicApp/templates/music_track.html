@@ -56,12 +56,9 @@
 
     {% if page_queue %}
         nextPage = {{ page_queue }};
-        $("#page1").attr('title', nextPage[0]);
-        $("#page1").text('Page '+parseInt(nextPage[0]));
-        $("#page2").attr('title', nextPage[1]);
-        $("#page2").text('Page '+parseInt(nextPage[1]));
-        $("#page3").attr('title', nextPage[2]);
-        $("#page3").text('Page '+parseInt(nextPage[2]));
+        $("#page1").attr('title', nextPage[0]).text('Page '+parseInt(nextPage[0]));
+        $("#page2").attr('title', nextPage[1]).text('Page '+parseInt(nextPage[1]));
+        $("#page3").attr('title', nextPage[2]).text('Page '+parseInt(nextPage[2]));
     {% endif %}
     f2(nextPage);
 </script>

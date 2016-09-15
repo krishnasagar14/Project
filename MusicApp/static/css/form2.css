@@ -29,10 +29,7 @@ form {
     top : 90px;
     width : 400px;
     border : solid;
-    padding-left : 50px;
-    padding-bottom : 50px;
-    padding-right : 50px;
-    padding-top : 50px;
+    padding : 50px 50px 50px 50px;
     background-color : white;
 }
 

@@ -37,7 +37,6 @@ body {
     border-top : 2px black solid;
 }
 .track_list::-webkit-scrollbar {
-    widthv : 0px;
     background : transparent;
 }
 
@@ -80,12 +79,11 @@ body {
     height : 40px;
     top : 520px;
     left : 450px;
-    vertical-align : center;
+    vertical-align : middle;
 }
 
 .pages {
     list-style-type : none;
-    border-radius : 25px;
     border-radius : 25px;
     position : fixed;
     top : 580px;

@@ -20,7 +20,7 @@ function f1(id) {
         else {
             var v1 = $(this).serialize().split('&'), res = [], result= 'id=' + id + '&';
             for (var x =0; x<v1.length;x++) {
-                if (v1[x].includes('gname')) {
+                if(v1[x].includes('gname')) {
                     res.push(v1[x].split('=')[1]);
                 }
                 else if('rating=' == v1[x]) {
@@ -36,7 +36,7 @@ function f1(id) {
                 url:$(this).attr('action'),
                 data:result,
                 success: function(result) {
-                    alert('Posted to server !!!! Thanks .... Closing ... Reload Main page');
+                    alert('Success');
                     window.close();
                 },
             });

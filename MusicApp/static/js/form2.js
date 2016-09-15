@@ -19,7 +19,7 @@ function f1(id) {
                 url:$(this).attr('action'),
                 data:v1,
                 success: function(result) {
-                    alert('Posted to server !!!! Thanks .... Closing ... Reload Main page');
+                    alert('Success');
                     window.close();
                 },
             });
