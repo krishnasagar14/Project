@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Genres Available</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon.png' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/genre.css' %}">
+</head>
+<body>
+    <h1 id="title1">Track's Genres</h1>
+    <div id="div1" class="class1">
+        <div id="container">
+            {% if result %}
+                <ul class="genre_list">
+                    {% for item in result %}
+                        <li id="genres" title="id: {{ item.id }}" onclick="f3(this)"> <b>{{ item.name }}</b></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    <div id="div2" class="class1">
+        <button id="newGenreBttn">Add New Genre</button>
+    </div>
+    <div id="msgDiv"></div>
+</body>
+<script type="text/javascript" src="{% static 'js/genre.js' %}"></script>
+<script>
+    {% if not end %}
+        f1(1);
+    {% endif %}
+    {% if not start %}
+        f1(0);
+    {% endif %}
+    $( document ).ready(function() {
+        $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list');
+        $("#msgDiv").fadeOut(3600);
+        setTimeout(function(){
+            {% if start %}
+                f2(0);
+            {% endif %}
+            {% if end %}
+                f2(1);
+            {% endif %}
+        }, 3000);
+    });
+</script>
+</html>

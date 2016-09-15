@@ -1,0 +1,50 @@
+/**
+ * Created by krishnasagar on 7/9/16.
+ */
+
+* {
+    font-family : "Comic Sans MS", "Comic Sans", cursive;
+}
+body {
+    background-color : #5F9EA0;
+}
+label, input {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 125px;
+}
+label {
+    color: #2D2D2D;
+    font-size: 15px;
+}
+form, input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+form {
+    position : fixed;
+    left : 100px;
+    top : 90px;
+    width : 400px;
+    border : solid;
+    padding-left : 50px;
+    padding-bottom : 50px;
+    padding-right : 50px;
+    padding-top : 50px;
+    background-color : white;
+}
+.divErrors {
+    position : fixed;
+    top : 300px;
+    width : 400px;
+    left : 520px;
+}
+
+#ErrorSpan {
+    position : fixed;
+    top : 110px;
+    width : 400px;
+    left : 600px;
+    height : auto;
+}

@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Genre Page </title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon.png' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form2.css' %}">
+</head>
+<body>
+    <form id="form2" action='' method="post">
+        <h2>{% if id %} Edit {% else %} Add {% endif %}Music Genre Info : </h2>
+        {% csrf_token %}
+        {% if form %}
+            {{ form }}
+        {% endif %}
+        <input id="submitBttn" title="Form Submit" type="submit" value="Submit" />
+        <button  type="button" id="cancelBttn" title="Close Page">Cancel</button>
+    </form>
+    <span id="ErrorSpan"></span>
+</body>
+<script type="text/javascript" src="{% static 'js/form2.js' %}"></script>
+<script type="text/javascript">
+    $( "#submitBttn" ).click( function() {
+        document.getElementById('form2').action = "/{% if next %}{{ next }}{% endif %}/{% if id %}{{ id }}/{% endif %}";
+    });
+    {% if id %}
+        f1({{ id }});
+    {% else %}
+        f1(0);
+    {% endif %}
+</script>
+</html>

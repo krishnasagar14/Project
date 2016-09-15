@@ -1,0 +1,71 @@
+/**
+ * Created by krishnasagar on 7/9/16.
+ */
+* {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body {
+    background-color : #5F9EA0;
+}
+
+#title1 {
+    position : fixed;
+    right: 25%;
+    left: 25%;
+    top : 3%;
+    text-align : center;
+}
+
+#container {
+    background-color : white;
+    position : fixed;
+    top : 15%;
+    left : 35%;
+    border-bottom : 2px black solid;
+    border-top : 2px black solid;
+    height : 400px;
+    width : 380px;
+
+}
+.genre_list {
+    list-style-type : none;
+    position : absolute;
+    align-text : left;
+    vertical-align : center;
+    width : 340px;
+    height : 370px;
+    overflow-y : scroll;
+}
+.genre_list::-webkit-scrollbar {
+    widthv : 0px;
+    background : transparent;
+}
+#genres {
+    padding-left : 10px;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    border : 1px solid black;
+}
+#genres:hover {
+    font-size : x-large;
+}
+#newGenreBttn {
+    position : fixed;
+    top : 550px;
+    left : 37.3%;
+    width : 350px;
+    font-size : x-large;
+    padding-top : 10px;
+    padding-bottom : 10px;
+    vertical-align : center;
+}
+
+#msgDiv {
+    border : transparent;
+    position : fixed;
+    right : 50px;
+    height : auto;
+    width : 200px;
+    background-color : white;
+}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title> Music Track Page</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon.png' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/form1.css' %}">
+</head>
+<body>
+    <form id="form1" action='' method="post">
+        <h2>{% if id %} Edit {% else %} Add {% endif %}Music Track Info : </h2>
+        {% csrf_token %}
+        {% if form %}
+            {{ form }}
+        {% endif %}
+        <input id="submitBttn" title="Form Submit" type="submit" value="Submit" />
+        <button  type="button" id="cancelBttn" title="Close Page">Cancel</button> <!--form submission event is overruled with using different type attribute -->
+    </form>
+    <span id="ErrorSpan"></span>
+    {% if form.errors %}
+        <div class="divErrors">Please correct the error{{ form.errors }} below.</div>
+    {% endif %}
+</body>
+<script type="text/javascript" src="{% static 'js/form1.js' %}"></script>
+<script type="text/javascript">
+    $( "#submitBttn" ).click( function() {
+        //alert('Sent to server');
+        document.getElementById('form1').action = "/{% if next %}{{ next }}{% endif %}/{% if id %}{{ id }}/{% endif %}";
+        //window.close();
+    });
+    {% if id %}
+        f1({{ id }});
+    {% else %}
+        f1(0);
+    {% endif %}
+</script>
+</html>

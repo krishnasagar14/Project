@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Music Tracks</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon.png' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/music_track.css' %}">
+    <script type="text/javascript"></script>
+</head>
+<body>
+    <h1 id="title1">Music Tracks</h1>
+    <div id="div1" class="class1">
+        <div id="container">
+            {% if result %}
+                <ul class="track_list">
+                    {% for item in result %}
+                        <li id="tracks" title="id: {{ item.id }}" onclick="f1(this)">
+                            <div id="sept"><b> {{ item.title }} </b> &nbsp;
+                            {% if item.genres %}
+                                [
+                                    {% for i in item.genres %}
+                                        <a title="genre id: {{ i.id }}">{{ i.name }}</a> |
+                                    {% endfor %}
+                                ]
+                            {% else %}
+                                [No Genre]
+                            {% endif %} </div>
+                            <span id="sept1" class="stars" title="{{ item.rating }}" data-rating="{{ item.rating }}" data-num-stars="10"></span>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </div>
+    <div id="div2" class="class1">
+        <button id="newTrackBttn">Add New Track</button>
+    </div>
+    <div id="tabs">
+        <ul class="pages">
+            <li class="page"><a id="Ptab" title="Click"> Previous </a></li>
+            <li class="page"><a title="2" id="page1" class="active">Page 1</a></li>
+            <li class="page"><a title="3" id="page2">Page 2</a></li>
+            <li class="page"><a title="4" id="page3">Page 3</a></li>
+            <li class="page"><a id="Ntab" title="Click"> Next </a></li>
+        </ul>
+    </div>
+    <div id="msgDiv"></div>
+</body>
+<script type="text/javascript" src="{% static 'js/music_track.js' %}"></script>
+<script type="text/javascript">
+    var nexturl = "{% if nextUrl %}{{ nextUrl }}{% endif %}";
+    var nextPage;
+
+    {% if page_queue %}
+        nextPage = {{ page_queue }};
+        $("#page1").attr('title', nextPage[0]);
+        $("#page1").text('Page '+parseInt(nextPage[0]));
+        $("#page2").attr('title', nextPage[1]);
+        $("#page2").text('Page '+parseInt(nextPage[1]));
+        $("#page3").attr('title', nextPage[2]);
+        $("#page3").text('Page '+parseInt(nextPage[2]));
+    {% endif %}
+    f2(nextPage);
+</script>
+</html>

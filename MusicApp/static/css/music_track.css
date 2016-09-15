@@ -1,0 +1,122 @@
+/**
+ * Created by krishnasagar on 7/9/16.
+ */
+* {
+    font-family : "Comic Sans MS", "Comic Sans", cursive;
+}
+body {
+    background-color : #5F9EA0;
+}
+#title1 {
+    position : fixed;
+    right: 25%;
+    left: 25%;
+    top : 3%;
+    text-align : center;
+}
+
+#container {
+    position : fixed;
+    right: 25%;
+    left: 25%;
+    top : 11%;
+    text-align : center;
+    display : inline-block;
+}
+.track_list {
+    background-color : white;
+    list-style-type : none;
+    height : 420px;
+    position : absolute;
+    left : 0;
+    top : 50%;
+    width : 90%;
+    text-align : center;
+    overflow-y : scroll;
+    border-bottom : 2px black solid;
+    border-top : 2px black solid;
+}
+.track_list::-webkit-scrollbar {
+    widthv : 0px;
+    background : transparent;
+}
+
+#tracks {
+    border : 1px solid black;
+    align-items : center;
+    vertical-align : middle;
+    justify-content : center;
+    padding-top : 15px;
+    padding-bottom : 15px;
+}
+#tracks:hover {
+    font-size : x-large;
+}
+#sept {
+    padding-right : 2.5px;
+}
+#sept1 {
+    padding-left : 2.5px;
+}
+
+.class1 {
+    /*position : absolute;*/
+}
+
+#div2 {
+    position : fixed;
+    /*top : 520px;
+    right : 358px;
+    left : 15px;*/
+    align-items : center;
+    justify-content : center;
+    text-align : center;
+    /*padding-left: 34.5%;*/
+}
+#newTrackBttn {
+    position : absolute;
+    border-radius : 25px;
+    width : 450px;
+    height : 40px;
+    top : 520px;
+    left : 450px;
+    vertical-align : center;
+}
+
+.pages {
+    list-style-type : none;
+    border-radius : 25px;
+    border-radius : 25px;
+    position : fixed;
+    top : 580px;
+    right : 25%;
+    left : 25%;
+    padding : 0;
+    background-color: #333;
+}
+.page {
+    float : left;
+    margin-left : 23px;
+    width : 16%;
+}
+.page a {
+    display : block;
+    color : white;
+    width : auto;
+    text-align : center;
+    padding : 14px 16px;
+    text-decoration : none;
+}
+.page a:hover {
+    background-color : #000;
+}
+
+#msgDiv {
+    border : transparent;
+    position : fixed;
+    right : 50px;
+    top : 50px;
+    height : auto;
+    width : 250px;
+    background-color : white;
+}

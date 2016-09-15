@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/icon.png' %}"/>
+    {% if status %}
+        <title>MusicApp - Error Page</title>
+    {% else %}
+        <title>MusicApp - User Page</title>
+    {% endif %}
+</head>
+<body>
+    {% if status %}
+        {{ status }} - Reload page !!!
+    {% endif %}
+    {% if Success %}
+        {{ Success }}
+    {% endif %}
+</body>
+</html>
