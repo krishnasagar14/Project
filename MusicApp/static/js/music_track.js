@@ -44,10 +44,6 @@ $('#page3').click(function() {
     window.location.href = 'http://' + location.host + '/tracks/' + v.toString() + '/';
 });
 
-$( document ).ready(function() {
-    $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list').fadeOut(3000);
-});
-
 function f1(ele) {
     var id = $(ele).attr('title').split(':')[1].split(' ')[1];
     var left = ($(window).width() / 2) - (900 / 2),
@@ -77,3 +73,46 @@ function f2(nextPage) {
         }
     });
 }
+
+$("#formS").submit(function(e) {
+    e.preventDefault();
+    if($("#searchBox").val().length == 0) {
+        alert("Enter track name in below search box.");
+    }
+    else {
+        var v = $("#searchBox").val(), 
+        url = "http://104.197.128.152:8000/v1/tracks?title=";
+        $.ajax({
+            url : url + v,
+            type : "GET",
+            success : function(result) {
+                var searchRes = $("#results");
+                searchRes.empty();
+                if(result.count > 0) {
+                    //below steps can be done jquery and is easy.
+                    for(var i = 0;i < result.count; i++) {
+                        searchRes.append("<br>"+result.results[i]['title'] + "-" + result.results[i]['id'] + ", rating-" + result.results[i]['rating']+",[genres: ");
+                        if(result.results[i]['genres'].length > 0) {
+                            if(result.results[i]['genres'].length > 1) {
+                                for(var j = 0; j<result.results[i]['genres'].length;j++) {
+                                    console.log(result.results[i]['genres'][j]);
+                                    searchRes.append(result.results[i]['genres'][j]['id']+"-"+result.results[i]['genres'][j]['name']+",");
+                                }
+                            }
+                            else {
+                                searchRes.append(result.results[i]['genres'][0]['id']+"-"+result.results[i]['genres'][0]['name']+",");
+                            }
+                        }
+                        else {
+                            searchRes.append("none");
+                        }
+                        searchRes.append("]</br>");
+                    }
+                }
+                else {
+                    searchRes.append("Search not found !!!");
+                }
+            }
+        });
+    }
+});

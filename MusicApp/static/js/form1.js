@@ -24,10 +24,10 @@ function f1(id) {
                     res.push(v1[x].split('=')[1]);
                 }
                 else if('rating=' == v1[x]) {
-                    result += 'rating=0.0&'
+                    result += 'rating=0.0&';
                 }
                 else {
-                    result += v1[x] + '&'
+                    result += v1[x] + '&';
                 }
             }
             result += 'gname='+res;
@@ -36,7 +36,7 @@ function f1(id) {
                 url:$(this).attr('action'),
                 data:result,
                 success: function(result) {
-                    alert('Success');
+                    alert('Success.... reload page after 30 seconds.');
                     window.close();
                 },
             });

@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from django.views.decorators.cache import cache_page
-# from django.core.cache import cache
 
 # Create your views here.
 import requests
@@ -13,10 +11,13 @@ GT = MR.GenreTrack()
 
 addGenres = GT.getGTAll()
 
+if type(addGenres) == str:
+    print addGenres + "\n"
 
-# this decorator is attached so that whenever url is tracks or tracks/<any_number>, this cache will sustain for 1min
-@cache_page(60 * 1)
+
 def Music_track(request, page=None):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if page is None:
         url = 'http://104.197.128.152:8000/v1/tracks'
         r = requests.get(url)
@@ -37,6 +38,8 @@ def Music_track(request, page=None):
 
 
 def Add_Track(request):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if request.method == 'POST':
         genres = str(request.POST['gname']).split(',')
         data = {'id': request.POST['id'].encode('ascii', 'ignore'), 'title': str(request.POST['tname']),
@@ -56,6 +59,8 @@ def Add_Track(request):
 
 
 def Edit_Track(request, id=None):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if request.method == 'POST':
         genres = str(request.POST['gname']).split(',')
         data = {'id': request.POST['id'].encode('ascii', 'ignore'), 'title': str(request.POST['tname']),
@@ -83,9 +88,9 @@ def Edit_Track(request, id=None):
         return render(request, 'form1.html', {'form': EForm, 'id': id, 'next': 'editTrack'})
 
 
-# this decorator is attached so that whenever url is genres or genres/<any_number>, this cache will sustain for 1min
-@cache_page(60 * 1)
 def Track_Genre(request, page=None):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if page is None:
         url = 'http://104.197.128.152:8000/v1/genres'
         r = requests.get(url)
@@ -114,6 +119,8 @@ def Track_Genre(request, page=None):
 
 
 def Add_Genre(request):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if request.method == 'POST':
         res = GT.addGTrack(data={'name': request.POST['gname'].encode('ascii', 'ignore')})
         if 'Success' in res:
@@ -125,6 +132,8 @@ def Add_Genre(request):
 
 
 def Edit_Genre(request, id=None):
+    if type(addGenres) == str:
+        return render(request, 'error.html', {'status': addGenres + " Reconnect internet and restart application"})
     if request.method == 'POST':
         data = {'id': request.POST['id'].encode('ascii', 'ignore'),
                 'name': request.POST['gname'].encode('ascii', 'ignore')}

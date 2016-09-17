@@ -19,7 +19,7 @@ function f1(id) {
                 url:$(this).attr('action'),
                 data:v1,
                 success: function(result) {
-                    alert('Success');
+                    alert('Success.... reload page after 30 seconds.');
                     window.close();
                 },
             });

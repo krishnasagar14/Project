@@ -2,8 +2,8 @@
  * Created by krishnasagar on 7/9/16.
  */
 
-function f1(v) {
-    $(".genre_list").on("scroll", function() {
+$.fn.f1 = function(v) {
+    $(this).on("scroll", function() {
         var gl = $(this);
         if(v == 1) {
             if(gl.scrollTop() + gl.innerHeight() >= gl[0].scrollHeight) {
@@ -20,7 +20,7 @@ function f1(v) {
             }
         }
     });
-}
+};
 
 function f2(v) {
     if(v == 1) {

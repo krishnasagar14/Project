@@ -8,7 +8,6 @@
     <script type="text/javascript" src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/music_track.css' %}">
-    <script type="text/javascript"></script>
 </head>
 <body>
     <h1 id="title1">Music Tracks</h1>
@@ -48,7 +47,36 @@
         </ul>
     </div>
     <div id="msgDiv"></div>
+    <div id="searchBar">
+        <form id="formS" method="get" action="">
+            <input type="text" id="searchBox" placeholder="Search track name here"/>
+            <input type="submit" id="bttnSearch" title="Click" value=">"/>
+        </form>
+    </div>
+    <div id="myModal" class="modal">
+        <div id="searchRes" title="Search Results :"><span class="close">×</span><p id="results"></p></div>
+    </div>
 </body>
+<script>
+    $(function() {
+        $("#msgDiv").fadeIn(300).text('Instruction : Scroll up/down in the below list').fadeOut(3000);
+        
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("bttnSearch");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        };
+        span.onclick = function() {
+            modal.style.display = "none";
+        };
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
 <script type="text/javascript" src="{% static 'js/music_track.js' %}"></script>
 <script type="text/javascript">
     var nexturl = "{% if nextUrl %}{{ nextUrl }}{% endif %}";

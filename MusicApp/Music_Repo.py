@@ -1,7 +1,7 @@
 __author__ = 'krishnasagar'
 
 import requests
-# from django.core.cache import cache
+from django.core.cache import cache
 
 
 class MusicTrack:
@@ -18,12 +18,15 @@ class MusicTrack:
         Output :
             result : object of track list, each iterable having title, rating, genres
         """
+        if cache.get('track_' + str(page)):
+            return cache.get('track_' + str(page))
         r = requests.get(self.baseUrl % page)
         RJ = r.json()
         result = []
         if r.status_code == 200:
             if RJ['next'] is not None:
                 result = RJ['results']
+                cache.set('track_' + str(page), result, 30)
             else:
                 result = {'End': RJ['results']}
         else:
@@ -77,12 +80,15 @@ class GenreTrack:
         self.trackUrl = 'http://104.197.128.152:8000/v1/genres'
 
     def getGTracks(self):
+        if cache.get('genre_' + str(self.page)):
+            return cache.get('genre_' + str(self.page))
         r = requests.get(self.baseUrl % self.page)
         RJ = r.json()
         result = []
         if r.status_code == 200:
             if RJ['next'] is not None:
                 result = RJ['results']
+                cache.set('genre_' + str(self.page), result, 30)
                 self.page += 1
             else:
                 result = {'End': RJ['results']}
@@ -92,6 +98,8 @@ class GenreTrack:
 
     def getGTPrevTracks(self):
         if self.page > 2:
+            if cache.get('genre_' + str(self.page)):
+                return cache.get('genre_' + str(self.page))
             r = requests.get(self.baseUrl % (self.page - 2))
             self.page -= 1
         else:
@@ -109,11 +117,14 @@ class GenreTrack:
 
     def getGTAll(self):
         res = []
-        r = requests.get(self.trackUrl)
-        RJ = r.json()
-        if r.status_code == 200:
-            res += RJ['results']
-        return res
+        try:
+            r = requests.get(self.trackUrl)
+            RJ = r.json()
+            if r.status_code == 200:
+                res += RJ['results']
+            return res
+        except:
+            return "API not connected properly with application"
         '''while(RJ['next'] != None):
             r = requests.get(RJ['next'])
             RJ = r.json()
