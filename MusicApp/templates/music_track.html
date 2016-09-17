@@ -65,7 +65,8 @@
         var btn = document.getElementById("bttnSearch");
         var span = document.getElementsByClassName("close")[0];
         btn.onclick = function() {
-            modal.style.display = "block";
+            if($("#searchBox").val().length != 0) {
+            modal.style.display = "block";}
         };
         span.onclick = function() {
             modal.style.display = "none";
